@@ -32,9 +32,9 @@ def render():
     st.subheader("Gerar Bloco 0")
     st.caption("Monta o arquivo .txt do Bloco 0 a partir dos cadastros salvos e valida antes de exportar.")
 
-    cfg          = carregar_config()
+    cfg = carregar_config()
     participantes = json.loads(PART_PATH.read_text())  if PART_PATH.exists()  else []
-    itens         = json.loads(ITENS_PATH.read_text()) if ITENS_PATH.exists() else []
+    itens = json.loads(ITENS_PATH.read_text()) if ITENS_PATH.exists() else []
 
     if not cfg:
         st.warning("⚠️  Nenhum cadastro de empresa encontrado. Vá em **Cadastro da Empresa** primeiro.")
