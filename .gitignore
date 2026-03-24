@@ -1,0 +1,21 @@
+# Poetry
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Dados locais gerados pelo app
+config_empresa.json
+participantes.json
+itens.json
+*.txt.bak
+
+# Streamlit secrets (nunca sobe para o GitHub)
+.streamlit/secrets.toml
+
+# Sistema
+.DS_Store
+*.egg-info/
+dist/
+build/
