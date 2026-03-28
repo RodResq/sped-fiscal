@@ -47,7 +47,7 @@ with st.sidebar:
     ])
     st.markdown("---")
     st.markdown(
-        "<small style='color:#6666aa'>Projeto Piloto Python<br>"
+        "<small style='color:#6666aa'>Projeto Piloto<br>"
         "Leiaute 019 · PVA 6.0.1</small>",
         unsafe_allow_html=True
     )

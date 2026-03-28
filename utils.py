@@ -102,7 +102,13 @@ def colorir_linha(linha: str) -> str:
 
 def carregar_config() -> dict:
     if "empresa" in st.secrets:
-        return dict(st.secrets["empresa"])
+        dados_secrets = dict(st.secrets["empresa"])
+        if dados_secrets:
+            return dados_secrets
+    cfg_path = Path(__file__).parent / "config_empresa.json"
+    if cfg_path.exists():
+        with open(cfg_path, encoding="utf-8") as f:
+            return json.load(f)
     return {}
 
 
